@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Orator+Std&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css">
+	<title>Product</title>
 </head>
+
 <body>
-	<div>
-		<h1>Fluff Stuff</h1>
-	</div>
-	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		<div class="navbar-nav">
-			<a class="nav-item nav-link" href="index.html">Home</a>
-			<a class="nav-item nav-link" href="collection.html">Shop</a>
-			<a class="nav-item nav-link" href="shoes.html">About</a>
-			<a class="nav-item nav-link" href="racing boots.html">Login</a>
-			<a class="nav-item nav-link" href="contact.html">Cart</a>
+	<div class="container">
+		<div class="sixcols">
+			<img src="images/logo.svg">
+  			<a href="index.html">Home</a>
+  			<a href="shop.html" class="active">Shop</a>
+  			<a href="about.html">About</a>
+  			<a href="login.html">Login</a>
+  			<a href="cart.html">Cart</a>
+		</div>
+
+		<div class="twocols">
+    		<p class="back"> < BACK </p>
+		</div>
+
+		<div class="itempage">
+			<div class="imgpreview">
+				<img src="images/p1.png" class="selected">
+				<img src="images/p1.png">
+				<img src="images/p1.png">
+				<img src="images/p1.png">
+				<img src="images/p1.png">
+			</div>
+
+			<div class="focusimg">
+				<img src="images/p1.png">
+			</div>
+
+			<div class="itemdescription">
+				<h2>Classic Bed Pillow</h2>
+				<h2>$49</h2>
+				<br>
+				<hr>
+				<p>Color: Rainy Day</p>
+				<span class="dot" id="selectedcolor"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<hr>
+				<p>Fill: Duck Down</p>
+				<span class="dot"></span>
+				<span class="dot" id="selectedfill"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<hr>
+				<p>Quantity: 1</p>
+				<button class="button">Add To Cart</button>
+				<br><br>
+				<hr>
+				<p>Product Details</p>
+				<p>Euismod dictumst enim a blandit. Donec non habitant libero odio est nec. A et vitae enim a, dignissim vel ac amet. Arcu at at risus sit. </p>
+			</div>
 		</div>
 	</div>
+
+	<footer>
+		<hr><br>
+		<p>hello@fluffstuff.com&nbsp;&nbsp;|&nbsp;&nbsp;(800)&nbsp;341-2138&nbsp;&nbsp;|&nbsp;&nbsp;213 Walnut St, Pittsburgh</p>
+		<p>Copyright © 2021 Fluff Stuff. &nbsp;&nbsp;All Rights Reserved.</p>
+	</footer>
+
 </body>
