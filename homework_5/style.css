@@ -8,8 +8,17 @@ body {
   font-family: Open Sans;
   text-align: left;
   margin-top: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 4%;
+  margin-right: 4%;
+  position: relative;
+}
+
+.container{
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px; /* height of your footer */
 }
 
 .logo{
@@ -79,8 +88,6 @@ ul{
   background-position: center center;
   object-fit: cover;
 }
-
-
 
 
 .logoimg{
@@ -226,8 +233,6 @@ ul{
 }
 
 .focusimg img{
-/*  height: 350px;
-  width: 100%;*/
   background-position: center center;
   object-fit: cover;
   display: block;
@@ -244,6 +249,10 @@ hr{
   height: 1px;
   background-color: #C4C4C4;
   border: none;
+  clear: both;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  overflow: hidden;
 }
 
 .itempage{
@@ -255,8 +264,20 @@ hr{
   align-content: center;
   width: 100%;
   height: auto;
-  /*padding-right: 2%;*/
 }
+
+#itemprice{
+  float: right;
+}
+
+#itemname{
+  float: left;
+}
+
+.item-dscptn{
+   color: #777777;
+}
+
 
 .dot {
   height: 25px;
@@ -264,18 +285,30 @@ hr{
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  margin-right: 10px;
 }
 
 #selectedfill{
-  border: 1px solid black;
-  background-color: rgba(75, 34, 11, 1);
+  border: 2px solid #333333;
+  background-color: lightgray;
 }
 
 #selectedcolor{
-  border: 1px solid black;
+  border: 2px solid #333333;
   background-color: rgba(75, 34, 11, 0.8);
 }
 
+#color2{
+  background-color: #ED9F9F;
+}
+
+#color3{
+  background-color: #D9CBA7;
+}
+
+#color4{
+  background-color: #AACAD1;
+}
 
 p.productname, p.price{
   font-family: Open Sans;
@@ -351,11 +384,11 @@ a:link {
 }
 
 footer{
-  /*background-color: #D4D4D4;*/
   align-content: center;
-  margin-top: 35px;
-  padding: 10px;
   clear: both;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 
@@ -403,6 +436,37 @@ li.active {
 a.active{
   text-decoration: underline;
 }
+
+.quant{
+  float: left;
+}
+
+#quantity{
+  width: 65px;
+  height: 50px;
+  border: solid 1px #D4D4D4;
+  border-radius: 5px;
+  margin: 4px 2px;
+  margin-bottom: 10px;
+}
+
+#addcart{
+  float: right;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  font-size: 15px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 
 #bs1{
   width: 300px;

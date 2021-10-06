@@ -38,15 +38,15 @@
 			</div>
 
 			<div class="itemdescription">
-				<h2>Classic Bed Pillow</h2>
-				<h2>$49</h2>
+				<h2 id="itemname">Classic Bed Pillow</h2>
+				<h2 id="itemprice">$49</h2>
 				<br>
 				<hr>
 				<p>Color: Rainy Day</p>
 				<span class="dot" id="selectedcolor"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
-				<span class="dot"></span>
+				<span class="dot" id="color2"></span>
+				<span class="dot" id="color3"></span>
+				<span class="dot" id="color4"></span>
 				<hr>
 				<p>Fill: Duck Down</p>
 				<span class="dot"></span>
@@ -54,12 +54,14 @@
 				<span class="dot"></span>
 				<span class="dot"></span>
 				<hr>
-				<p>Quantity: 1</p>
-				<button class="button">Add To Cart</button>
-				<br><br>
+				<!-- <div class="checkout"> -->
+				<div class="quant">
+  				<input type="number" id="quantity" name="quantity" value="1" min="1" max="10"></div>
+				<button class="button" id="addcart">Add To Cart</button>
+				<!-- </div> -->
 				<hr>
-				<p>Product Details</p>
-				<p>Euismod dictumst enim a blandit. Donec non habitant libero odio est nec. A et vitae enim a, dignissim vel ac amet. Arcu at at risus sit. </p>
+				<p>DETAIL</p>
+				<p class="item-dscptn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod dictumst enim a blandit. Donec non habitant libero odio est nec. A et vitae enim a, dignissim vel ac amet. Arcu at at risus sit. </p>
 			</div>
 		</div>
 	</div>
