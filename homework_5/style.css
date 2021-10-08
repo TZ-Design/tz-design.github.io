@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-
+/* use consistent font and margin for the body */
 body {
   font-size: 14px;
   font-family: "Open Sans";
@@ -21,12 +21,7 @@ body {
   padding-bottom: 100px; /* height of your footer */
 }
 
-.logo{
-  display: flex;
-  justify-content: space-between;
-}
-
-
+/* top navigation bar */
 .navbar{
   overflow: hidden;
   padding: 10px 0px 0px 0px;
@@ -53,6 +48,7 @@ ul{
   color: black;
 }
 
+/* six columns layout for top nav bar */
 .sixcols a{
   float: left;
   font-weight: bold;
@@ -75,7 +71,7 @@ ul{
   object-fit: cover;
 }
 
-
+/* logo as an img */
 .logoimg{
   width: 43px;
   height: 43px;
@@ -91,6 +87,7 @@ ul{
 }
 
 
+/* use consistent button styling*/
 .button{
   font-size: 14px;
   font-family: "Open Sans";
@@ -121,6 +118,7 @@ ul{
 }
 
 
+/* set banner image to be responsive with a darker overlay */
 .banner{
   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.2)), url("images/banner.png"); 
   width: 100%;
@@ -138,7 +136,6 @@ ul{
 }
 
 .block{
-  /*top-padding: 80%;*/
   width: 100%
 }
 
@@ -154,6 +151,7 @@ ul{
   -ms-transform: translate(-50%, -50%);
 }
 
+/* set product category styling on home page */
 .category{
   color: white;
   position: relative;
@@ -167,6 +165,7 @@ ul{
 
 }
 
+/* tagline styling on home page banner */
 #tagline{
   color: white;
   position: absolute;
@@ -191,6 +190,7 @@ ul{
   height: auto;
 }
 
+/* four columns layout for the shop page */
 .fourcols{
   display: inline-grid;;
   grid-template-columns: auto auto auto auto;
@@ -200,6 +200,17 @@ ul{
   height: auto;
 }
 
+.threecols{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 20px;
+  grid-gap: 1em;
+  width: 100%;
+  height: auto;
+}
+
+
+/* two columns layout for the about page */
 .twocols{
   display: inline-grid;
   grid-template-columns: 20% auto;
@@ -209,6 +220,7 @@ ul{
   height: auto;
 }
 
+/* set various image styling */
 .imgpreview img{
   height: 150px;
   width: auto;
@@ -241,6 +253,7 @@ hr{
   overflow: hidden;
 }
 
+/* set the grild for items display*/
 .itempage{
   display: inline-grid;
   grid-template-columns: auto auto auto;
@@ -264,7 +277,7 @@ hr{
    color: #777777;
 }
 
-
+/* color options are displayed as colored dot */
 .dot {
   height: 25px;
   width: 25px;
@@ -279,6 +292,7 @@ hr{
   background-color: lightgray;
 }
 
+/* selected color option */
 #selectedcolor{
   border: 2px solid #333333;
   background-color: rgba(75, 34, 11, 0.8);
@@ -296,6 +310,7 @@ hr{
   background-color: #AACAD1;
 }
 
+/* set the stylings for item detail page elements */
 p.productname, p.price{
   font-family: "Open Sans";
   font-weight: normal;
@@ -341,6 +356,7 @@ a:link {
   text-decoration: none;
 }
 
+/* half and half display layout for the about page */
 .half{
   display: inline-grid;
   grid-template-columns: auto auto;
@@ -363,11 +379,14 @@ a:link {
   line-height: 2;
 }
 
+/* back text button styling */
 .back{
   cursor: pointer;
   color: #555555;
 }
 
+
+/* footer section styling */
 footer{
   align-content: center;
   clear: both;
@@ -376,7 +395,6 @@ footer{
   width: 100%;
 }
 
-
 footer > p{
   text-align: center;
   color: #888888;
@@ -384,15 +402,8 @@ footer > p{
   margin: 8px;
 }
 
-.threecols{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding-top: 20px;
-  grid-gap: 1em;
-  width: 100%;
-  height: auto;
-}
 
+/* filter section styling on shop page */
 .filter{
   float: left;
 }
@@ -406,6 +417,7 @@ footer > p{
   color: #555555;
 }
 
+/* added interactivity for hover effect*/
 .filter li:hover {
   cursor: pointer;
   color: #000000;
@@ -417,7 +429,6 @@ li.active {
   text-decoration: underline;
 }
 
-
 a.active{
   text-decoration: underline;
 }
@@ -426,6 +437,8 @@ a.active{
   float: left;
 }
 
+
+/* checkout quantity and add to cart section on item detail page */
 #quantity{
   width: 65px;
   height: 50px;
@@ -453,6 +466,7 @@ input::-webkit-inner-spin-button {
 }
 
 
+/* product category images styling on the home page */
 #bs1{
   width: 300px;
   height: 240px;
@@ -497,6 +511,7 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
 }
 
+/* product listing images styling on the shop page from 1-9*/
 #p1{
   width: 350px;
   height: 240px;
