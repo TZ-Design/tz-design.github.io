@@ -242,6 +242,7 @@ span.selected{
   display: inline-grid;
   grid-template-columns: 20% auto;
   padding-top: 30px;
+  padding-left: 20px;
   justify-content: left;
   width: 100%;
   height: auto;
