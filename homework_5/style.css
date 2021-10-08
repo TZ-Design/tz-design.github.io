@@ -5,7 +5,7 @@
 
 body {
   font-size: 14px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   text-align: left;
   margin-top: 2%;
   margin-left: 4%;
@@ -26,20 +26,6 @@ body {
   justify-content: space-between;
 }
 
-.title{
-  position: relative;
-  display: inline-block;
-  align-self: center;
-  padding-top: 5px;
-  top: 0px;
-  left: 0px;
-  font-family: Orator Std;
-  font-weight: Medium;
-  font-size: 30px;
-  opacity: 1;
-  text-align: left;
-  margin: 0px;
-}
 
 .navbar{
   overflow: hidden;
@@ -59,7 +45,7 @@ ul{
 
 .navbar a{
   float: left;
-  font-style: bold;
+  font-weight: bold;
   text-align: center;
   padding: 0px 80px;
   text-decoration: none;
@@ -69,7 +55,7 @@ ul{
 
 .sixcols a{
   float: left;
-  font-style: bold;
+  font-weight: bold;
   text-align: center;
   padding-top: 5px;
   text-decoration: none;
@@ -107,7 +93,7 @@ ul{
 
 .button{
   font-size: 14px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   border: none;
   color: white;
   padding: 15px 32px;
@@ -173,8 +159,8 @@ ul{
   position: relative;
   padding-top: 20%;
   padding-left: 5%;
-  font-family: Open Sans;
-  font-weight: SemiBold;
+  font-family: "Open Sans";
+  font-weight: Bolder;
   font-size: 25px;
   opacity: 1;
   text-align: left;
@@ -187,8 +173,8 @@ ul{
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Open Sans;
-  font-weight: SemiBold;
+  font-family: "Open Sans";
+  font-weight: Bolder;
   font-size: 40px;
   opacity: 1;
   text-align: center;
@@ -311,8 +297,7 @@ hr{
 }
 
 p.productname, p.price{
-  font-family: Open Sans;
-  font-style: normal;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 18px;
   color: black;
@@ -331,8 +316,7 @@ p.price{
 }
 
 p.description{
-  font-family: Open Sans;
-  font-style: normal;
+  font-family: "Open Sans";
   font-weight: normal;
   font-size: 15px;
   color: #C4C4C4;
@@ -362,6 +346,7 @@ a:link {
   grid-template-columns: auto auto;
   grid-gap: 40px;
   padding-top: 30px;
+  padding-bottom: 30px;
   justify-content: left;
   width: 100%;
   height: auto;
@@ -474,7 +459,7 @@ input::-webkit-inner-spin-button {
   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.1)), url("images/bs1.png"); 
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: length;
+  background-size: cover;
   opacity: 1;
   overflow: hidden;
 }
