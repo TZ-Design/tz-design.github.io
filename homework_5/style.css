@@ -38,6 +38,33 @@ ul{
   padding-bottom: 15px;
 }
 
+/* pillow fill options on product detail page*/
+
+span.fill{
+  display: inline-flex;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  color: #777777;
+  margin-right: 5px;
+  background-color: #fafafa;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+}
+
+span.fill:hover{
+  border:1px solid #333333;
+}
+
+span.product_fill{
+  padding: 7px;
+}
+
+span.selected{
+  border: 1px solid #333333;
+  color: #333333;
+}
+
 .navbar a{
   float: left;
   font-weight: bold;
@@ -287,15 +314,10 @@ hr{
   margin-right: 10px;
 }
 
-#selectedfill{
-  border: 2px solid #333333;
-  background-color: lightgray;
-}
-
 /* selected color option */
 #selectedcolor{
   border: 2px solid #333333;
-  background-color: rgba(75, 34, 11, 0.8);
+  background-color: rgba(75, 34, 11, 0.6);
 }
 
 #color2{
@@ -445,13 +467,13 @@ a.active{
   border: solid 1px #D4D4D4;
   border-radius: 5px;
   margin: 4px 2px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 #addcart{
   float: right;
   height: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 input[type="number"] {
