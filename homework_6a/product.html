@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Orator+Std&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css">
+	<title>Product</title>
+</head>
+
+<body>
+	<div class="container">
+		<!-- used a grid six column layout to render top navigation -->
+		<div class="sixcols">
+			<a href="index.html"><img src="images/logo.svg" alt="fluff stuff logo"></a>
+  			<a href="index.html">Home</a>
+  			<a href="shop.html" class="active">Shop</a>
+  			<a href="about.html">About</a>
+  			<a href="login.html">Login</a>
+  			<a href="cart.html">Cart</a>
+		</div>
+
+		<!-- back button -->
+		<div class="twocols">
+    		<p class="back">&lt;BACK </p>
+		</div>
+
+		<!-- product image thumbnails -->
+		<div class="itempage">
+			<div class="imgpreview">
+				<img src="images/p1.png" class="selected" alt="bed pillow thumbnail">
+				<img src="images/p1.png" alt="bed pillow thumbnail">
+				<img src="images/p1.png" alt="bed pillow thumbnail">
+				<img src="images/p1.png" alt="bed pillow thumbnail">
+				<img src="images/p1.png" alt="bed pillow thumbnail">
+			</div>
+
+			<!-- focus image (as chosen from the thumbnail section) -->
+			<div class="focusimg">
+				<img src="images/p1.png" alt="focused image bed pillow">
+			</div>
+
+			<!-- product descriptions with name and price -->
+			<div class="itemdescription">
+				<h2 id="itemname">Classic Bed Pillow</h2>
+				<h2 id="itemprice">$49</h2>
+				<br>
+				<hr>
+
+				<!-- color options -->
+				<p>Color: <b>Rainy Day</b></p>
+				<span class="dot" id="selectedcolor"></span>
+				<span class="dot" id="color2"></span>
+				<span class="dot" id="color3"></span>
+				<span class="dot" id="color4"></span>
+				<hr>
+
+				<!-- fill options -->
+				<p>Fill: <b>Duck Down</b></p>
+				<span>
+					<span class="fill selected"><span class="product_fill">Duck Down</span></span>
+					<span class="fill"><span class="product_fill">Hypoallergenic Poly-blend</span></span>
+					<span class="fill"><span class="product_fill">Memory Form</span></span>
+				</span>
+				<hr>
+
+				<!-- checkout section -->
+				<div class="quant">
+  				<input type="number" id="quantity" name="quantity" value="1" min="1" max="10"></div>
+				<button class="button" id="addcart">Add To Cart</button>
+				<hr>
+
+				<!-- product details -->
+				<p>DETAIL</p>
+				<p class="item-dscptn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod dictumst enim a blandit. Donec non habitant libero odio est nec. A et vitae enim a, dignissim vel ac amet. Arcu at at risus sit. </p>
+			</div>
+		</div>
+	</div>
+
+<!-- footer section with contact info and address -->
+	<footer>
+		<hr><br>
+		<p>hello@fluffstuff.com&nbsp;&nbsp;|&nbsp;&nbsp;(800)&nbsp;341-2138&nbsp;&nbsp;|&nbsp;&nbsp;213 Walnut St, Pittsburgh</p>
+		<p>Copyright © 2021 Fluff Stuff. &nbsp;&nbsp;All Rights Reserved.</p>
+	</footer>
+
+</body>
