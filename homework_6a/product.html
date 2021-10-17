@@ -31,8 +31,6 @@
 				<img src="images/p1.png" class="selected" alt="bed pillow thumbnail">
 				<img src="images/p1.png" alt="bed pillow thumbnail">
 				<img src="images/p1.png" alt="bed pillow thumbnail">
-				<img src="images/p1.png" alt="bed pillow thumbnail">
-				<img src="images/p1.png" alt="bed pillow thumbnail">
 			</div>
 
 			<!-- focus image (as chosen from the thumbnail section) -->
@@ -48,20 +46,49 @@
 				<hr>
 
 				<!-- color options -->
-				<p>Color: <b>Rainy Day</b></p>
-				<span class="dot" id="selectedcolor"></span>
-				<span class="dot" id="color2"></span>
-				<span class="dot" id="color3"></span>
-				<span class="dot" id="color4"></span>
+				<p>Color Options:</p>
+				<!-- <option class="dot" value="RainyDay">Rainy Day</option> -->
+				<div class="btn-group">
+					<input type="radio" name="colorOptions" id="coloroption1" checked>
+					<label class="ColorDot" for="coloroption1">
+					<span class="dot" id="selectedcolor"></span>
+					Rainy Day</label>
+
+				<br>
+				<input type="radio" name="colorOptions" id="coloroption2">
+				<label class="ColorDot" for="coloroption2">
+					<span class="dot" id="color2"></span>
+					 After School Special</label>
+
+				<br>
+				<input type="radio" name="colorOptions" id="coloroption3">
+				<label class="ColorDot" for="coloroption3">
+					<span class="dot" id="color3"></span>
+					 Morning Haze
+				</label>
+
+				<br>
+				<input type="radio" name="colorOptions" id="coloroption4">
+				<label class="ColorDot" for="coloroption4">
+					<span class="dot" id="color4"></span>
+					Cozy Denim
+				</label>
+			</div>
 				<hr>
 
 				<!-- fill options -->
-				<p>Fill: <b>Duck Down</b></p>
-				<span>
-					<span class="fill selected"><span class="product_fill">Duck Down</span></span>
-					<span class="fill"><span class="product_fill">Hypoallergenic Poly-blend</span></span>
-					<span class="fill"><span class="product_fill">Memory Form</span></span>
-				</span>
+			<p>Fill Options:</p>
+			<div class="btn-group">
+    			<input type="radio" name="fillOptions" id="filloption1" checked>
+					<label class="btn" for="filloption1"> Duck Down </label><br>
+
+    			<input type="radio" name="fillOptions" id="filloption2">
+					<label class="btn" for="filloption2">Hypoallergenic Poly-blend</label><br>
+
+    			<input type="radio" name="fillOptions" id="filloption3">
+					<label class="btn" for="filloption3"> Memory Form</label>
+			</div>
+
 				<hr>
 
 				<!-- checkout section -->

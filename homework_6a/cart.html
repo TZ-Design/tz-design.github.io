@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Orator+Std&display=swap" rel="stylesheet" />
@@ -10,8 +9,10 @@
 </head>
 
 <body>
+	<div class="container">
+		<!-- used a grid six column layout to render top navigation -->
 		<div class="sixcols">
-			<img src="images/logo.svg">
+			<a href="index.html"><img src="images/logo.svg" alt="fluff stuff logo"></a>
   			<a href="index.html">Home</a>
   			<a href="shop.html">Shop</a>
   			<a href="about.html">About</a>
@@ -19,8 +20,37 @@
   			<a href="cart.html" class="active">Cart</a>
 		</div>
 
+		<!-- back button -->
 		<div class="twocols">
-    		<p class="back"> < BACK </p>
+    		<p class="back"> < Continue Shopping </p>
 		</div>
+
+		<div class="cartPage">
+			<div class="itemSummary">
+				<img src="images/p1.png">
+				<h2>Classic Bed Pillow</h2>
+				<h2>$49/each</h2>
+				<p> Rainy Day&nbsp;&nbsp;|&nbsp;&nbsp;Duck Down</p>
+				<a href="">Delete</a>
+				<input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+				<br><br><br>
+				<hr>
+				<h4>Shipping and Return Policy</h4>
+				<p class="faketext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat, risus suspendisse a integer velit, sed sed dui, egestas. Ornare fermentum a, ipsum magna lectus natoque at amet. Amet viverra aliquet semper urna consectetur pellentesque senectus convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat, risus suspendisse a integer velit, sed sed dui, egestas. Ornare fermentum a, ipsum magna lectus natoque at amet. Amet viverra aliquet semper urna consectetur pellentesque senectus convallis.</p>
+			</div>
+			<div class="orderSummary">
+				<h2>Order Summary</h2>
+				<hr>
+				<p>Product Total</p>
+				<p class="price">$49</p>
+				<p>Delivery</p>
+				<p>Free</p>
+				<h3>TOTAL</h3>
+				<h3>$49</h3>
+				<button class="button" id="checkout">Check Out</button>
+			</div>
+		</div>
+
+
 
 </body>
