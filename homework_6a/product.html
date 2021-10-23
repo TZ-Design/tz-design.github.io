@@ -17,7 +17,7 @@
   			<a href="shop.html" class="active">Shop</a>
   			<a href="about.html">About</a>
   			<a href="login.html">Login</a>
-  			<a href="cart.html">Cart</a>
+  			<a href="cart.html" id="navCart">Cart</a>
 		</div>
 
 		<!-- back button -->
@@ -49,26 +49,26 @@
 				<p>Color Options:</p>
 				<!-- <option class="dot" value="RainyDay">Rainy Day</option> -->
 				<div class="btn-group">
-					<input type="radio" name="colorOptions" id="coloroption1" checked>
+					<input type="radio" name="colorOptions" id="coloroption1" value="Rainy Day" checked>
 					<label class="ColorDot" for="coloroption1">
 					<span class="dot" id="selectedcolor"></span>
 					Rainy Day</label>
 
 				<br>
-				<input type="radio" name="colorOptions" id="coloroption2">
+				<input type="radio" name="colorOptions" id="coloroption2" value="After School Special">
 				<label class="ColorDot" for="coloroption2">
 					<span class="dot" id="color2"></span>
 					 After School Special</label>
 
 				<br>
-				<input type="radio" name="colorOptions" id="coloroption3">
+				<input type="radio" name="colorOptions" id="coloroption3" value="Morning Haze">
 				<label class="ColorDot" for="coloroption3">
 					<span class="dot" id="color3"></span>
 					 Morning Haze
 				</label>
 
 				<br>
-				<input type="radio" name="colorOptions" id="coloroption4">
+				<input type="radio" name="colorOptions" id="coloroption4" value="Cozy Denim">
 				<label class="ColorDot" for="coloroption4">
 					<span class="dot" id="color4"></span>
 					Cozy Denim
@@ -79,14 +79,14 @@
 				<!-- fill options -->
 			<p>Fill Options:</p>
 			<div class="btn-group">
-    			<input type="radio" name="fillOptions" id="filloption1" checked>
+    			<input type="radio" name="fillOptions" id="filloption1" value="Duck Down" checked>
 					<label class="btn" for="filloption1"> Duck Down </label><br>
 
-    			<input type="radio" name="fillOptions" id="filloption2">
+    			<input type="radio" name="fillOptions" id="filloption2" value="Hypoallergenic Poly-blend">
 					<label class="btn" for="filloption2">Hypoallergenic Poly-blend</label><br>
 
-    			<input type="radio" name="fillOptions" id="filloption3">
-					<label class="btn" for="filloption3"> Memory Form</label>
+    			<input type="radio" name="fillOptions" id="filloption3" value="Memory Foam">
+					<label class="btn" for="filloption3"> Memory Foam</label>
 			</div>
 
 				<hr>
@@ -96,6 +96,8 @@
   				<input type="number" id="quantity" name="quantity" value="1" min="1" max="10"></div>
 				<button class="button" id="addcart" type="submit">Add To Cart</button>
 				<hr>
+				
+				<script src="script.js"></script>
 
 				<!-- product details -->
 				<p>DETAIL</p>
