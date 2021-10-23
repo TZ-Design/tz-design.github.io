@@ -27,16 +27,16 @@
             cart_total_price+=shoppingCart[product].Price;
         }
         //fill total cost of our shopping cart 
-        document.getElementById("cart_total").innerHTML=cart_total_price;
+        document.getElementById("totalPrice").innerHTML=cart_total_price;
     }
 
 
-    function AddtoCart(name,description,price){
+    function AddtoCart(name,quantity,price){
        //Below we create JavaScript Object that will hold three properties you have mentioned:    Name,Description and Price
        var singleProduct = {};
        //Fill the product object with data
        singleProduct.Name=name;
-       singleProduct.Description=description;
+       singleProduct.Quantity=quantity;
        singleProduct.Price=price;
        //Add newly created product to our shopping cart 
        shoppingCart.push(singleProduct);
@@ -104,7 +104,7 @@
                             Name
                         </td>
                         <td>
-                            Description
+                            Quantity
                         </td>
                         <td>
                             Price

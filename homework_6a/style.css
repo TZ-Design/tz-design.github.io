@@ -371,12 +371,12 @@ p.productname, p.price{
 
 p.productname{
   float: left;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 p.price{
   float: right;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 p.description{
@@ -413,7 +413,7 @@ a:link {
 .cartPage{
   display: inline-grid;
   grid-template-columns: 60% 30%;
-  grid-gap: 20px;
+  grid-gap: 100px;
   padding-top: 30px;
   padding-bottom: 30px;
   justify-content: left;
