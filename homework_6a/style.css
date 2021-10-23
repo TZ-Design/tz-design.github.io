@@ -560,7 +560,7 @@ input::-webkit-inner-spin-button {
 
 
 /* product category images styling on the home page */
-#bs1{
+#bestSeller1{
   width: 300px;
   height: 240px;
   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.1)), url("images/bs1.png");
@@ -571,7 +571,7 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
 }
 
-#bs2{
+#bestSeller2{
   width: 300px;
   height: 240px;
   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.1)), url("images/bs2.png");
@@ -582,7 +582,7 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
 }
 
-#bs3{
+#bestSeller3{
   width: 300px;
   height: 240px;
   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.1)), url("images/bs3.png");
@@ -593,7 +593,7 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
 }
 
-#bs4{
+#bestSeller4{
   width: 300px;
   height: 240px;
   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.1)), url("images/bs4.png");
@@ -605,7 +605,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* product listing images styling on the shop page from 1-9*/
-#p1{
+#product1{
   width: 300px;
   height: 240px;
   background:url("images/p1.png");
@@ -627,7 +627,7 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
 }
 
-#p3{
+#product3{
   width: 300px;
   height: 240px;
   background:url("images/p3.jpeg");
@@ -671,7 +671,7 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
 }
 
-#p7{
+#product7{
   width: 300px;
   height: 240px;
   background:url("images/p7.jpg");
@@ -693,7 +693,7 @@ input::-webkit-inner-spin-button {
   overflow: hidden;
 }
 
-#p9{
+#product9{
   width: 300px;
   height: 240px;
   background:url("images/p9.jpg");
