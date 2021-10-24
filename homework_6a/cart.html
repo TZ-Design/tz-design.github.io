@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Orator+Std&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 	<title>Cart</title>
 </head>
 
@@ -22,17 +22,23 @@
 
 		<!-- back button -->
 		<div class="twocols">
-    		<p class="back"> < Continue Shopping </p>
+    		<p class="back"> &lt; Continue Shopping </p>
 		</div>
 
 		<div class="cartPage">
-			<div class="itemSummary" id="itemsInCart">
-				<!-- <img src="images/p1.png">
-				<h2>Classic Bed Pillow</h2>
-				<h2>$49</h2>
-				<p> Rainy Day&nbsp;&nbsp;|&nbsp;&nbsp;Duck Down</p>
-				<a href="">Delete</a> -->
-				<input type="number" id="quantity" name="quantity" value="1" min="1" max="10"> -->
+			<div class="itemSummary">
+				<!-- <ul id="itemsInCart">
+					<li>Hit the gym</li>	
+				</ul> -->
+				<table class="show-cart table" id="showCartTable">
+				
+				</table>
+				<h4 id="show-item-name"></h4>
+				<h4 id="show-item-price"></h4>
+				<p id="show-item-color"></p>
+				<p id="show-item-fill"></p>
+				<a href="">Delete</a> 
+				<!-- <input type="number" id="quantity" name="quantity" value="1" min="1" max="10"> -->
 				<br><br><br>
 				<hr>
 				<h4>Shipping and Return Policy</h4>
@@ -41,12 +47,12 @@
 			<div class="orderSummary">
 				<h2>Order Summary</h2>
 				<hr>
-				<p>Product Total</p>
-				<p class="price">$49</p>
+				<p>Total Items</p>
+				<p class="price" id="totalItems"></p>
 				<p>Delivery</p>
 				<p>Free</p>
-				<h3>TOTAL</h3>
-				<h3 id="totalPrice">$49</h3>
+				<p>Total Price</p>
+				<p id="totalPrice">$</p>
 				<button class="button" id="checkout">Check Out</button>
 			</div>
 		</div>

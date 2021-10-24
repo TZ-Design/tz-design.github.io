@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Orator+Std&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="style.css">
 	<title>Product</title>
+	<script src="script.js" defer></script>
 </head>
 
 <body>
@@ -43,13 +43,12 @@
 			<!-- product descriptions with name and price -->
 			<div class="itemdescription">
 				<h2 id="itemname">Classic Bed Pillow</h2>
-				<h2 id="itemprice">$49</h2>
+				<h2 id="itemprice" value="49">$49</h2>
 				<br>
 				<hr>
 
 				<!-- color options -->
-				<p>Color Options:</p>
-				<!-- <option class="dot" value="RainyDay">Rainy Day</option> -->
+				<p>Color Options: &nbsp <span id="colorSelected"></span></p>
 				<div class="btn-group">
 					<input type="radio" name="colorOptions" id="coloroption1" value="Rainy Day" checked>
 					<label class="ColorDot" for="coloroption1">
@@ -79,7 +78,7 @@
 				<hr>
 
 				<!-- fill options -->
-			<p>Fill Options:</p>
+			<p>Fill Options: &nbsp <span id="fillSelected"></span> </p>
 			<div class="btn-group">
     			<input type="radio" name="fillOptions" id="filloption1" value="Duck Down" checked>
 					<label class="btn" for="filloption1"> Duck Down </label><br>
@@ -99,7 +98,7 @@
 				<button class="button" id="addcart" type="submit">Add To Cart</button>
 				<hr>
 				
-				<script src="script.js"></script>
+				<!-- <script src="script.js"></script> -->
 
 				<!-- product details -->
 				<p>DETAIL</p>
