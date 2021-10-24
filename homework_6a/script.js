@@ -1,7 +1,28 @@
+
+    var addCartButton = document.getElementById("addcart");
     let totalItem = 0;
 
-//create array that will hold all ordered products
+    //when radio button selection change, display the new selection value
+    function detectColorChange(event) {
+        document.getElementById('colorSelected').innerHTML = event.target.value;
+        console.log(event.target.value);
+    }
+    document.querySelectorAll("input[name='colorOptions']").forEach((input) => {
+        input.addEventListener('change', detectColorChange);
+    });
+
+    //when radio button selection change, display the new selection value
+    function detectFillChange(event) {
+        document.getElementById('fillSelected').innerHTML = event.target.value;
+    }
+    document.querySelectorAll("input[name='fillOptions']").forEach((input) => {
+        input.addEventListener('change', detectFillChange);
+    });
+
+
     var Cart = [];
+    //create array that will hold all ordered products
+    
     var shoppingCart = (function() {
         cart = [];
         // Constructor
@@ -37,7 +58,7 @@
             var item = new Item(name,quantity,color,fill,price);
             cart.push(item);
             saveCart();
-            console.log('item:' + item.name + item.color + item.quantity + item.fill + item.price)
+            //console.log('item:' + item.name + item.color + item.quantity + item.fill + item.price)
         }
         // Set count from item
         obj.setCountForItem = function(name, quantity) {
@@ -131,7 +152,7 @@
         // }
         //console.log(output);
         //var display = cartArray
-        document.getElementById('showCartTable').innerHTML = output;
+        //document.getElementById('showCartTable').innerHTML = output;
         //$('.total-cart').html(shoppingCart.totalCart());
         //$('.total-count').html(shoppingCart.totalCount());
 
@@ -140,6 +161,8 @@
         for(var i in cartArray) {
             cart_total_price += cartArray[i].price;
         }
+    }
+
         // //iterate over array of objects
         // for(var product in shoppingCart){
         //     //add new row      
@@ -154,7 +177,7 @@
         //     cellDescription.innerHTML = shoppingCart[product].Description;
         //     cellPrice.innerHTML = shoppingCart[product].Price;
         //cart_total_price+=shoppingCart[product].Price;
-    }
+    //}
         //fill total cost of our shopping cart 
     //     document.getElementById("totalPrice").innerHTML=cart_total_price;
     // }
@@ -171,21 +194,21 @@
        displayShoppingCart();
     }  
 
-    var addCartButton = document.getElementById("addcart");
-    // // temporarilly change the button text to "added!"
-    // document.getElementById('addcart').addEventListener('click', function (clicked) {
-    //     return function () {
-    //         if (!clicked) {
-    //             var last = this.innerHTML;
-    //             this.innerHTML = 'Added!';
-    //             clicked = true;
-    //             setTimeout(function () {
-    //                 this.innerHTML = last;
-    //                 clicked = false;
-    //             }.bind(this), 1000);
-    //         }
-    //     };
-    // }(false), this);
+    
+    // temporarilly change the button text to "added!"
+    document.getElementById('addcart').addEventListener('click', function (clicked) {
+        return function () {
+            if (!clicked) {
+                var last = this.innerHTML;
+                this.innerHTML = 'Added!';
+                clicked = true;
+                setTimeout(function () {
+                    this.innerHTML = last;
+                    clicked = false;
+                }.bind(this), 1000);
+            }
+        };
+    }(false), this);
 
     // when button is clicked, grab properities of the item and add to cart
     addCartButton.onclick = function(){
@@ -209,31 +232,14 @@
         document.getElementById("navCart").innerHTML ='Cart (' + totalItem + ')';
         shoppingCart.addItemToCart(name, quantity, color, fill, price);
         AddtoCart(name, quantity, color, fill, price);
-        //document.getElementById("totalItems").innerHTML = totalItem;
-        // document.getElementById("showCartTable").innerHTML = "<tr>"
-        // + "<td>" + name + "</td>" 
-        // + "<td>(" + price + ")</td>"
-        // + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + name + ">-</button>"
-        // + "<input type='number' class='item-count form-control' data-name='" + name + "' value='" + quantity + "'>"
-        // + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + name + ">+</button></div></td>"
-        // + "<td><button class='delete-item btn btn-danger' data-name=" + name + ">X</button></td>"
-        // + " = " 
-        // + "<td>" + color + "</td>" 
-        // +  "</tr>";
-        //document.getElementById("totalPrice").innerHTML = ;
+
         //displayShoppingCart();
-        //updateCartPage();
-        document.getElementById("show-item-name").innerHTML = name;
-        document.getElementById("show-item-price").innerHTML = price;
-        document.getElementById("show-item-color").innerHTML = color;
-        document.getElementById("show-item-fill").innerHTML = fill;
+        
+        //document.getElementById("show-item-name").innerHTML = name;
+        //document.getElementById("show-item-price").innerHTML = price;
+        //document.getElementById("show-item-color").innerHTML = color;
+        //document.getElementById("show-item-fill").innerHTML = fill;
     }
-
-    function updateCartPage(){
-        document.getElementById("totalItems").innerHTML = totalItem;
-    }
-    
-
 
 // function displayCart() {
 //     var cartArray = shoppingCart.listCart();

@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js" defer></script>
+	<script src="script.js" async></script>
+	<script src="cart.js" async></script>
 	<title>Cart</title>
 </head>
 
@@ -27,18 +28,33 @@
 
 		<div class="cartPage">
 			<div class="itemSummary">
-				<!-- <ul id="itemsInCart">
-					<li>Hit the gym</li>	
-				</ul> -->
 				<table class="show-cart table" id="showCartTable">
-				
+					<tr>
+						<th>Item</th>
+						<th>Color</th>
+						<th>Fill</th>
+						<th>Quantity</th>
+						<th>Price</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td>Classic Bed Pillow</td>
+						<td>Cozy Denim</td>
+						<td>Memory Foam</td>
+						<th><input type="number" class="itemQ" name="quantity" value="1" min="1" max="10"></th>
+						<td>$49</td>
+						<th>&#x2715</th>
+					</tr>
+					<tr>
+						<td>Simple Couch Pillow</td>
+						<td>Morning Haze</td>
+						<td>Duck Down</td>
+						<th><input type="number" class="itemQ" name="quantity" value="2" min="1" max="10"></th>
+						<td>$39</td>
+						<th>&#x2715</th>
+					</tr>
 				</table>
-				<h4 id="show-item-name"></h4>
-				<h4 id="show-item-price"></h4>
-				<p id="show-item-color"></p>
-				<p id="show-item-fill"></p>
-				<a href="">Delete</a> 
-				<!-- <input type="number" id="quantity" name="quantity" value="1" min="1" max="10"> -->
+				
 				<br><br><br>
 				<hr>
 				<h4>Shipping and Return Policy</h4>
@@ -48,15 +64,14 @@
 				<h2>Order Summary</h2>
 				<hr>
 				<p>Total Items</p>
-				<p class="price" id="totalItems"></p>
-				<p>Delivery</p>
+				<p id="totalItems">3</p>
+				<p>Delivery Fee</p>
 				<p>Free</p>
 				<p>Total Price</p>
-				<p id="totalPrice">$</p>
+				<p id="totalPrice">$127</p>
 				<button class="button" id="checkout">Check Out</button>
 			</div>
 		</div>
-
 
 
 </body>
